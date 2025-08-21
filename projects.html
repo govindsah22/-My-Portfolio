@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects · Portfolio</title>
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Internal CSS (page-specific tweak) -->
+    <style>
+      /* Internal CSS: subtle page-specific accent underline for the H1 */
+      .page-title::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 64px;
+        margin-top: 8px;
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Home">
+        <span class="dot"></span>
+        <span>My Portfolio</span>
+      </a>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" >Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <section class="card">
+          <h1 class="page-title" >Projects</h1>
+          
+<p class="muted">Here are a few practice projects .</p>
+<div class="grid-3">
+  <article class="project">
+    <h3>1. Expense Manager</h3>
+    <p>
+A simple, responsive web application for tracking daily expenses and incomes. It allows users to categorize spending, view summaries, and maintain a clean financial record.
+<li>Technologies: HTML, CSS, JavaScript</li></p>
+    <div class="badges"><span class="badge">Semantic HTML</span><span class="badge">Flex/Grid</span></div>
+  </article>
+  <article class="project">
+    <h3>2. Article Generator using Generative AI</h3>
+    <p>An AI-powered application that automatically generates well-structured articles on any given topic using a generative language model. Designed to assist in content creation with minimal human intervention.
+<li>Technologies: Python, Generative AI APIs, Natural Language Processing</li></p>
+    <div class="badges"><span class="badge">CSS Grid</span><span class="badge">Responsive</span></div>
+  </article>
+  <article class="project">
+    <h3>3. Movie Website</h3>
+    <p>A web platform to browse and discover movies with trailers, ratings, and basic details. Uses a public movie API to fetch real-time information, ensuring updated content.
+<li>Technologies: HTML, CSS, JavaScript, Movie Database API</li></p>
+    <div class="badges"><span class="badge">Forms</span><span class="badge">Validation</span></div>
+  </article>
+  <article class="project">
+    <h3>4. Multimodal Biometric System</h3>
+    <p>An authentication and verification system that integrates multiple biometric modalities such as fingerprint and facial recognition to enhance security and accuracy.
+<li>Technologies: Python, OpenCV, Machine Learning</li></p>
+    <div class="badges"><span class="badge">Forms</span><span class="badge">Validation</span></div>
+  </article>
+</div>
+
+        </section>
+      </div>
+    </main>
+    
+<footer class="site-footer">
+  <div class="container">
+    <div class="sep"></div>
+    <p class="small">© <span id="year">2025</span> Govind Sah. Built with pure HTML5 & CSS.</p>
+  </div>
+</footer>
+
+  </body>
+</html>

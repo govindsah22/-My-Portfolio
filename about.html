@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About · Portfolio</title>
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Internal CSS (page-specific tweak) -->
+    <style>
+      /* Internal CSS: subtle page-specific accent underline for the H1 */
+      .page-title::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 64px;
+        margin-top: 8px;
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Home">
+        <span class="dot"></span>
+        <span>My Portfolio</span>
+      </a>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html" >Projects</a></li>
+        <li><a href="contact.html" >Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <section class="card">
+          <h1 class="page-title" >About</h1>
+          
+<div class="grid-2">
+  <div>
+    <p>I’m a passionate <em>Artificial Intelligence and Data Science</em> student dedicated to exploring data-driven solutions that make a meaningful impact. My journey in technology revolves around turning raw data into actionable insights, developing intelligent systems, and building applications that combine innovation with usability. I believe in continuous learning and strive to stay ahead in emerging tech trends.</p>
+    <dl>
+      <dt>Interests</dt><dd>Machine Learning, Web Development, Problem Solving, Data Science ,Artificial Intelligence</dd>
+      <dt>Location</dt><dd>janakpur dham, Nepal</dd>
+      <dt>Currently</dt><dd>Learning Web Development & Data Science</dd>
+    </dl>
+  </div>
+  <div>
+    <h3>Education</h3>
+    <ul>
+      <li>Degree: B.Tech in Artificial Intelligence and Data Science</li>
+      <li>College / University: KPR Institute of Engineering and Technology</li>
+      <li>Batch: 2023–2027</li>
+      <li>Achievements: Co-ordinator for the <em>Kalam’s World Record</em> event conducted by our college’s Mental Health Club.</li>
+    </ul>
+    <div class="badges" style="margin: top 10px;">
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3</span>
+      <span class="badge">Accessibility</span>
+      <span class="badge">Responsive Design</span>
+    </div>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </main>
+    
+<footer class="site-footer">
+  <div class="container">
+    <div class="sep"></div>
+    <p class="small">© <span id="year">2025</span> Govind Sah. Built with pure HTML5 & CSS.</p>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact · Portfolio</title>
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Internal CSS (page-specific tweak) -->
+    <style>
+      /* Internal CSS: subtle page-specific accent underline for the H1 */
+      .page-title::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 64px;
+        margin-top: 8px;
+        background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Home">
+        <span class="dot"></span>
+        <span>My Portfolio</span>
+      </a>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="projects.html" >Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="https://github.com/govindsah22" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/govind-sah-88a011313/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <section class="card">
+          <h1 class="page-title" >Contact</h1>
+          
+<p class="muted">Have a question or a project idea? Send a message and I’ll reply as soon as I can.</p>
+<form action="#" method="post" novalidate>
+  <div>
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your full name" required minlength="2" maxlength="80">
+  </div>
+  <div class="grid-2">
+    <div>
+      <label for="phone">Contact Number</label>
+      <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" pattern="^\+?[0-9\s\-()]{7,20}$" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@gmail.com" required>
+    </div>
+  </div>
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell me a bit about your project…" required minlength="10" maxlength="1000"></textarea>
+  </div>
+  <div>
+    <button class="btn" type="submit">Send Message</button>
+    <button class="btn ghost" type="reset" style="margin-left:8px;">Reset</button>
+  </div>
+</form>
+
+        </section>
+      </div>
+    </main>
+    
+<footer class="site-footer">
+  <div class="container">
+    <div class="sep"></div>
+    <p class="small">© <span id="year">2025</span> Govind Sah Built with pure HTML5 & CSS.</p>
+  </div>
+</footer>
+
+  </body>
+</html>
